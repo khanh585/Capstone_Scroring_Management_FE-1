@@ -32,13 +32,23 @@
     "test:component": "umi test ./src/components",
     "tsc": "tsc"
   },
-  "husky": { "hooks": { "pre-commit": "npm run lint-staged" } },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
   "lint-staged": {
     "**/*.less": "stylelint --syntax less",
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
   "dependencies": {
     "@ant-design/icons": "^4.0.0",
     "@ant-design/pro-layout": "^5.0.8",
@@ -52,6 +62,7 @@
     "bizcharts": "^3.5.3-beta.0",
     "bizcharts-plugin-slider": "^2.1.1-beta.1",
     "classnames": "^2.2.6",
+    "compression": "^1.7.4",
     "dva": "^2.4.0",
     "gg-editor": "^2.0.2",
     "lodash": "^4.17.11",
@@ -60,6 +71,7 @@
     "lodash.isequal": "^4.5.0",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.24.0",
+    "morgan": "^1.10.0",
     "numeral": "^2.0.6",
     "nzh": "^1.0.3",
     "omit.js": "^1.0.2",
@@ -73,7 +85,8 @@
     "react-router": "^4.3.1",
     "umi": "^3.0.14",
     "umi-request": "^1.0.8",
-    "use-merge-value": "^1.0.1"
+    "use-merge-value": "^1.0.1",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@ant-design/pro-cli": "^1.0.18",
@@ -98,7 +111,6 @@
     "detect-installer": "^1.0.1",
     "enzyme": "^3.11.0",
     "eslint": "^6.8.0",
-    "express": "^4.17.1",
     "gh-pages": "^2.0.1",
     "husky": "^4.0.7",
     "jsdom-global": "^3.0.2",
@@ -109,7 +121,9 @@
     "puppeteer-core": "^2.1.1",
     "stylelint": "^13.0.0"
   },
-  "engines": { "node": ">=10.0.0" },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "checkFiles": [
     "src/**/*.js*",
     "src/**/*.ts*",
