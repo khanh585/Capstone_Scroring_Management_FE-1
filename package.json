@@ -59,6 +59,8 @@
     "@antv/l7-maps": "^2.0.0",
     "@types/lodash.debounce": "^4.0.6",
     "@types/lodash.isequal": "^4.5.5",
+    "@umijs/preset-react": "^1.4.8",
+    "@umijs/preset-ui": "^2.0.9",
     "antd": "^4.0.0",
     "bizcharts": "^3.5.3-beta.0",
     "bizcharts-plugin-slider": "^2.1.1-beta.1",
@@ -102,9 +104,6 @@
     "@types/react-helmet": "^5.0.13",
     "@umijs/fabric": "^2.0.5",
     "@umijs/plugin-blocks": "^2.0.5",
-    
-    "@umijs/preset-react": "^1.4.8",
-    "@umijs/preset-ui": "^2.0.9",
     "carlo": "^0.9.46",
     "chalk": "^4.0.0",
     "cross-env": "^7.0.0",
